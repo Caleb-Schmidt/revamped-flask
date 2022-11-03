@@ -1,8 +1,6 @@
 from . import bp as pokemon
 from flask import render_template, request, flash, redirect, url_for
 import requests
-from app.models import User
-from flask_login import login_user, login_required, logout_user, current_user
 
 @pokemon.route('/search', methods=['GET', 'POST'])
 def search():
