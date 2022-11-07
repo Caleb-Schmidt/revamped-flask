@@ -12,7 +12,7 @@ migrate = Migrate(compare_type=True)
 login = LoginManager()
 moment = Moment()
 
-if os.environ.get('FlASK_DEBUG'):
+if os.environ.get('FLASK_DEBUG'):
     cors = CORS()
 
 def create_app(config_class=Config):

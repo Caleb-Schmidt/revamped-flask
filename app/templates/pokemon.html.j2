@@ -30,5 +30,8 @@
             </tr>
         </tbody>
     </table>
+    <form action = "{{url_for('pokemon.search')}}" method="GET">
+        <input class="btn btn-primary col-auto" type="submit" value="Catch" name="catch">
+    </form>
 {% endif %}
 {% endblock %}

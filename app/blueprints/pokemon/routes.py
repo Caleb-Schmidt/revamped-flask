@@ -26,3 +26,7 @@ def search():
         return render_template('pokemon.html.j2', poke=poke_dict)
 
     return render_template('pokemon.html.j2')
+
+@pokemon.route('/my_pokemon')
+def my_pokemon():
+    return render_template('my_pokemon.html.j2')
